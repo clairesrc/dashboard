@@ -34,3 +34,20 @@
 .DateTime-divider {
   opacity: 0.25;
 }
+.App-date {
+  font-size: 150%;
+}
+.App-date > p > * {
+  display: block;
+}
+.DateTime-day {
+  font-size: 200%;
+}
+.DateTime-year,
+.DateTime-dayOfWeek {
+  font-size: 75%;
+  opacity: 0.75;
+}
+.DateTime-month {
+  text-transform: uppercase;
+}

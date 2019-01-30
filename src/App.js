@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import './Countdown.css';
+import './Weather.css';
 import './DateTime.css';
 import DateTime from './components/DateTime';
 import Weather from './components/Weather';
@@ -18,7 +19,7 @@ class App extends React.Component {
         <div className="App-grid">
           <Weather />
           <DateTime />
-          <Countdown />>
+          <Countdown />
         </div>
       </div>
     );

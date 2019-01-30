@@ -9,11 +9,11 @@ const CountdownItems = [
   },
   {
     title: "Meadow's Birthday",
-    date: '8/13'
+    date: '08/13'
   },
   {
     title: 'New year',
-    date: '1/1'
+    date: '01/01'
   }
 ];
 

@@ -1,0 +1,17 @@
+.App-weather {
+  font-size: 150%;
+}
+.App-weather > p > * {
+  display: block;
+  margin: 0 auto;
+}
+.Weather-temp-figure {
+  font-size: 150%;
+}
+.App-weather > p > .Weather-condition {
+  margin-bottom: 1em;
+  opacity: 0.5;
+}
+.App-weather img {
+  filter: grayscale(100%);
+}

@@ -23,16 +23,17 @@ export default class Countdown extends React.Component {
 
   calculateItem(item) {
     const now = moment();
-    const coefficient =
-      moment(`${item.date}/${now.format('YYYY')}`, 'MM/DD/YYYY').unix() /
-      now.unix();
-    item.percent = parseInt((coefficient - 1) * 1000);
-    console.log(item);
+    const itemDate = moment(
+      `${item.date}/${now.format('YYYY')}`,
+      'MM/DD/YYYY'
+    ).unix();
+    const coefficient = now.unix() - itemDate;
+    item.percent = (coefficient / itemDate) * 1000;
     return item;
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => this.tick(), 86400);
+    this.interval = setInterval(() => this.tick(), 8640000);
   }
 
   componentWillUnmount() {
@@ -41,7 +42,7 @@ export default class Countdown extends React.Component {
 
   render() {
     const listItems = this.state.items
-      .filter(item => item.percent > 0)
+      .filter(item => item.percent < 0)
       .map((item, index) => (
         <li key={index}>
           <span className="App-countdown-title">{item.title}</span>
@@ -49,7 +50,7 @@ export default class Countdown extends React.Component {
           <div className="App-countdown-percent">
             <div
               className="App-countdown-percent-figure"
-              style={{ width: `${item.percent}%` }}
+              style={{ width: `${Math.abs(item.percent)}%` }}
             />
           </div>
         </li>

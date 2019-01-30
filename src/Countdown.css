@@ -19,7 +19,6 @@
 }
 .App-countdown-date {
   display: inline-block;
-  opacity: 0.5;
-  transform: scale(0.5);
+  transform: scale(0.75);
   transform-origin: bottom;
 }
