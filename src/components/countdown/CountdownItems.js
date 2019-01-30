@@ -1,14 +1,14 @@
 const CountdownItems = [
   {
-    title: 'Anniverary',
+    title: 'Anniversary',
     date: '10/28'
   },
   {
-    title: 'Fox Birthday',
+    title: "Fox's Birthday",
     date: '10/29'
   },
   {
-    title: 'Meadow Birthday',
+    title: "Meadow's Birthday",
     date: '8/13'
   },
   {

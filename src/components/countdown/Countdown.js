@@ -45,6 +45,7 @@ export default class Countdown extends React.Component {
       .map((item, index) => (
         <li key={index}>
           <span className="App-countdown-title">{item.title}</span>
+          <span className="App-countdown-date">{item.date}</span>
           <div className="App-countdown-percent">
             <div
               className="App-countdown-percent-figure"

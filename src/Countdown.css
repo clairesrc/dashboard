@@ -1,7 +1,13 @@
 /* countdown */
 .App-countdown li {
   text-align: left;
-  padding-bottom: 100%;
+  padding-bottom: 1em;
+  width: 100%;
+  list-style-type: square;
+  color: #666;
+}
+.App-countdown li span {
+  color: #999;
 }
 .App-countdown-percent {
   height: 1px;
@@ -10,4 +16,10 @@
 .App-countdown-percent-figure {
   height: 1px;
   background: #0f0;
+}
+.App-countdown-date {
+  display: inline-block;
+  opacity: 0.5;
+  transform: scale(0.5);
+  transform-origin: bottom;
 }

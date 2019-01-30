@@ -7,7 +7,8 @@ body,
 .App-time,
 .Weather-condition,
 .Weather-temp-figure,
-.DateTime-day {
+.DateTime-day,
+.App-countdown-date {
   font-family: 'Major Mono Display', monospace;
 }
 .DateTime-ap {
