@@ -1,6 +1,7 @@
 /* countdown */
 .App-countdown li {
   text-align: left;
+  padding-bottom: 100%;
 }
 .App-countdown-percent {
   height: 1px;

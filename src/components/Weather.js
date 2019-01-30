@@ -15,7 +15,7 @@ export default class Weather extends React.Component {
   tick = async function() {
     const weatherData = await axios({
       url: `https://api.openweathermap.org/data/2.5/weather?q=Chicago&units=imperial&appid=${
-        process.env.OWM_API_KEY
+        process.env.REACT_APP_OWM_API_KEY
       }`
     });
     console.log(weatherData);
