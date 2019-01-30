@@ -1,0 +1,12 @@
+/* countdown */
+.App-countdown li {
+  text-align: left;
+}
+.App-countdown-percent {
+  height: 1px;
+  width: 100%;
+}
+.App-countdown-percent-figure {
+  height: 1px;
+  background: #0f0;
+}

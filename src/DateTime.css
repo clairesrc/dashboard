@@ -1,0 +1,36 @@
+/* datetime */
+.App-time {
+  font-size: 225%;
+}
+.App-time > p > * {
+  position: relative;
+  line-height: 25%;
+}
+.DateTime-ap {
+  line-height: 100%;
+  display: inline-block;
+  transform: scale(0.75) translate(0px, -10%);
+  border-bottom: 2px solid #aaa;
+  padding-bottom: 5%;
+  opacity: 0.5;
+}
+.DateTime-minutes::after,
+.DateTime-seconds::after,
+.DateTime-hours::after {
+  content: 'min';
+  position: absolute;
+  top: 100%;
+  left: -30%;
+  display: inline-block;
+  transform: scale(0.5);
+  opacity: 0.25;
+}
+.DateTime-seconds::after {
+  content: 'sec';
+}
+.DateTime-hours::after {
+  content: 'hrs';
+}
+.DateTime-divider {
+  opacity: 0.25;
+}

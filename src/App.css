@@ -1,0 +1,67 @@
+/* type */
+html,
+body,
+.DateTime-ap {
+  font-family: 'Merriweather', serif;
+}
+.App-time,
+.Weather-condition,
+.Weather-temp-figure,
+.DateTime-day {
+  font-family: 'Major Mono Display', monospace;
+}
+.DateTime-ap {
+  text-transform: uppercase;
+}
+
+/* layout */
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: #aaa;
+  padding: 0 15px;
+}
+
+.App-grid {
+  width: 100%;
+  height: 90vh;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 33%;
+  grid-column-gap: 15px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+section {
+  box-sizing: border-box;
+  display: grid;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+section > * {
+  margin: auto;
+}
+
+.App-grid > div {
+  display: grid;
+  grid-auto-flow: row;
+  grid-row-gap: 15px;
+}
+
+/* components */
+
+/* header */
+.App-header p {
+  padding: 5px;
+  opacity: 0.5;
+}
